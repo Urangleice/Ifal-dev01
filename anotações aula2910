@@ -1,0 +1,78 @@
+COMO FAZER UMA CALCULADORA NO VS CODE PYTHON3 (modelo disponível em: https://awari.com.br/aprenda-a-criar-uma-calculadora-em-python-passo-a-passo-completo/): 
+
+def adicao(a, b):
+    return a + b
+
+def subtracao(a, b):
+    return a - b
+
+def multiplicacao(a, b):
+    return a * b
+
+def divisao(a, b):
+    return a / b
+
+def calculadora():
+    operacao = input("Escolha uma operação (+, -, *, /): ")
+    num1 = float(input("Digite o primeiro número: "))
+    num2 = float(input("Digite o segundo número: "))
+
+    if operacao == "+":
+        resultado = adicao(num1, num2)
+        print("O resultado da adição é:", resultado)
+    elif operacao == "-":
+        resultado = subtracao(num1, num2)
+        print("O resultado da subtração é:", resultado)
+    elif operacao == "*":
+        resultado = multiplicacao(num1, num2)
+        print("O resultado da multiplicação é:", resultado)
+    elif operacao == "/":
+        resultado = divisao(num1, num2)
+        print("O resultado da divisão é:", resultado)
+    else:
+        print("Operação inválida!")
+calculadora()
+
+CALCULDORA QUE O WALKER FEZ:
+
+#Pegar os valores do usuário
+base = float(input("digite o primeiro número:"))
+expoente = float(input("digite o segundo número:"))
+
+#Calcula e Exibe o resultado
+resultado = base**expoente
+resultado = f"{resultado:_.2f}"
+resultado = resultado.replace(".", ",").replace("_",".")
+print(f"{base} elevado ao {expoente} é {resultado}")
+
+CRIANDO FUNÇÕES:
+
+def ola(para):
+    print("Olá", para)
+
+nome = input("Qual seu nome?")
+ola(nome)
+
+OUTRA FORMA DE CRIAR FUNÇÕES:
+
+def main():
+    nome = input("Qual seu nome?")
+    ola()
+    ola(nome)
+
+def ola(para="Mundo"):
+    print("Olá", para.title())
+
+main()
+
+CRIANDO ESCOPOS:
+
+def main():
+    nome = input("Qual seu nome?")
+    ola()
+
+def ola():
+    nome = "Gleice Silva"
+    print("Olá", nome)
+
+main()

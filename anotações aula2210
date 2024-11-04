@@ -1,0 +1,21 @@
+nome = input("Qual seu nome?")
+print("Olá,", nome.lower())
+
+nome = input("Qual seu nome?")
+print("Olá,", nome.upper())
+
+nome = input("Qual seu nome?")
+print("Olá,", nome.capitalize())
+
+print("Olá,")
+print(nome.rstrip(), end="")
+print("Tem algo depois")
+
+print("Olá,")
+print(nome.lstrip(), end="")
+print("Tem algo depois")
+
+nome = input("Qual seu nome? ")
+primeiro_nome, sobrenome = nome.title().split()
+print(Olá, nome)
+
