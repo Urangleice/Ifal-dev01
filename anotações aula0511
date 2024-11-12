@@ -1,0 +1,39 @@
+Pesquisar oq é o snake case, camel case e kebb case.
+No python o snake case é o mais usado para nomear arquivos.
+
+'''O Walker usou uma coisa chamada return, depois vou pesquisar o que isso faz'''
+
+CALCULADORA DE QUADRADO
+
+def main():
+    print("--- Calculadora de Quadrados ---")
+    n = float(input("Qual o número? "))
+    result = calcula_quadrado(n)
+    print(f"O quadrado de {n} é {result}")
+
+def calcula_quadrado(n):
+    return n * n
+
+main()
+
+
+CALCULADORA DE QUADRADO E CUBO
+
+def main():
+    print("--- Calculadora de Quadrados e Cubos ---")
+    n = float(input("Qual o número? "))
+    result = calcula_quadrado(n)
+    result2 = calcula_cubo(n)
+    print(f"O quadrado de {n} é {result} e o cubo é {result2}")
+   
+def calcula_quadrado(n):
+    return n * n
+
+def calcula_cubo(n):
+    return n *n * n
+
+main()
+
+
+Dica: pra abrir o :emoji sense: clica em Ctrl + I
+
